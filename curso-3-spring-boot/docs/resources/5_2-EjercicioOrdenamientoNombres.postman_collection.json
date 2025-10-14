@@ -1,0 +1,38 @@
+{
+    "info": {
+        "_postman_id": "b672fb6c-eb78-482a-96d4-8854e5b0d8a2",
+        "name": "EjercicioOrdenamientoNombres",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "_exporter_id": "27946130"
+    },
+    "item": [
+        {
+            "name": "localhost:8080/ordenamiento/ordenar-nombres",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "raw",
+                    "raw": "[\r\n    \"Carlos\",\r\n    \"Ana\",\r\n    \"Pedro\",\r\n    \"Luis\",\r\n    \"María\"\r\n]",
+                    "options": {
+                        "raw": {
+                            "language": "json"
+                        }
+                    }
+                },
+                "url": {
+                    "raw": "localhost:8080/ordenamiento/ordenar-nombres",
+                    "host": [
+                        "localhost"
+                    ],
+                    "port": "8080",
+                    "path": [
+                        "ordenamiento",
+                        "ordenar-nombres"
+                    ]
+                }
+            },
+            "response": []
+        }
+    ]
+}
