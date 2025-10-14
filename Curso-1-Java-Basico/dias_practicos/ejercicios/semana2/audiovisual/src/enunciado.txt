@@ -1,0 +1,39 @@
+Sistema de Reproductor Multimedia
+
+Contexto
+Necesitas desarrollar un sistema para una aplicación de reproductor multimedia que pueda manejar diferentes tipos de contenido: música, videos, podcasts y audiolibros.
+Requerimientos
+1. Funcionalidad básica:
+- Definir una clase Padre ContenidoMultimedia con:
+    - Atributos:
+        - Título
+        - Duración
+    - Metodos:
+        - duracionFormateadaHMS: para formatear la duración en horas, minutos y segundos
+- Definir interfaces:
+    - Reproducible: reproducir()
+    - Descargable: descargar()
+    - Compartible: compartir() y generarEnlace()
+- Cada tipo de contenido hereda de ContenidoMultimedia y debe mostrar otros atributos específicos:
+    - Música: artista y género
+    - Video: calidad
+    - Podcast: presentador y episodio(int)
+
+2. Funcionalidades adicionales:
+
+- Todos los tipos de contenido deben poder reproducirse
+- Los videos y podcasts deben poder descargarse y verificar si ya están descargados
+- Solo los videos deben poder compartirse en redes sociales y generar enlaces
+
+3. Aplicación principal:
+
+Crear una clase ReproductorApp que maneje una Lista de contenido multimedia
+Debe reproducir toda la playlist
+Debe descargar todo el contenido que sea descargable
+Debe compartir todo el contenido que sea compartible
+
+En Main debes crear una lista que debe ser del tipo de interfaz que es comun a todos los contenidos,
+
+4. Toque final:
+- Cuando ya tengas todo funcionando crea la clase Audiolibro que herede de ContenidoMultimedia y con estos atributos: autor, narrador y capítulo(String). Debe ser reproducible y descargable, pero no compartible.
+
